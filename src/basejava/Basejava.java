@@ -13,8 +13,6 @@ public class Basejava {
 
         Numero numero = new Numero();
         numero.valor = 4;
-//        System.out.print(numero.parImpar());
-
         System.out.print(numero.maiorValor(1, 4));
     }
     
