@@ -2,6 +2,8 @@ package basejava;
 
 import java.util.Scanner;
 
+import javax.swing.JOptionPane;
+
 public class Basejava {
 
     public static void main(String[] args) {
@@ -9,9 +11,8 @@ public class Basejava {
         Scanner scan = new Scanner(System.in);
         Numero numero = new Numero();
 
-        System.out.print("Digite um numero: ");
-        numero.valor = scan.nextInt();
-        System.out.println(numero.parImpar());
+        numero.valor = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite um numero: "));
+        JOptionPane.showMessageDialog(null, "O numero é: " + numero.parImpar());
 
         System.out.print("Digite o primeiro valor: ");
         int v1 = scan.nextInt();
