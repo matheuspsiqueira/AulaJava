@@ -1,4 +1,4 @@
-package basejava;
+package basejava.numeros;
 
 public class Numero {
     
@@ -44,7 +44,7 @@ public class Numero {
             valor3 = valor1;
             valor1 = temp;
         }
-        
+
         if (valor2 > valor3){
             temp = valor3;
             valor3 = valor2;
