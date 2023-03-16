@@ -11,8 +11,12 @@ public class Basejava {
         Scanner scan = new Scanner(System.in);
         Numero numero = new Numero();
 
-        numero.valor = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite um numero: "));
-        JOptionPane.showMessageDialog(null, "O numero é: " + numero.parImpar());
+        try{
+            numero.valor = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite um numero: "));
+            JOptionPane.showMessageDialog(null, "O numero é: " + numero.parImpar());
+        } catch (Exception ex){
+            JOptionPane.showMessageDialog(null, "Digite apenas numeros");
+        }
 
         System.out.print("Digite o primeiro valor: ");
         int v1 = scan.nextInt();
